@@ -1,6 +1,11 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <div class="examples">
+      <div w-200-400 class="border-background"></div>
+      <div w-200-400 class="border-svg"></div>
+      <div class="box"></div>
+    </div>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -41,6 +46,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../styles/variables.scss";
+@import "../styles/svg.scss";
+.examples {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+[w-200-400] {
+  width: 200px;
+  height: 400px;
+  background-color: white;
+}
+[w-200-400] {
+  aspect-ratio: '200:400';
+}
+.border-svg {
+  background: white svg(border-square param(--fill-color white) param(--border-color $blue) param(--border-width, 3));
+}
+.border-background {
+  background: white svg(border-square param(--fill-color white) param(--border-color $blue));
+}
+.box {
+  width: 200px;
+  height: 400px;
+  border: 1px solid #00b1ff;
+}
 h3 {
   margin: 40px 0 0;
 }
