@@ -8,7 +8,8 @@
 
 ***
 
-下图最左侧为svg实现1px边框，最右侧为border-width: 1px的普通边框
+下图最左侧为svg实现1px边框,最右侧为border-width: 1px的普通边框
 
 示例：
+
 ![Alt 示例图片](/example.png)
