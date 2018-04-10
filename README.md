@@ -8,6 +8,11 @@
 
 ***
 
+在线预览：
+[vue-demo](http://blog.keyy.xyz/vue-demo/#/)
+
+***
+
 下图最左侧为svg实现1px边框,最右侧为border-width: 1px的普通边框
 
 示例：
