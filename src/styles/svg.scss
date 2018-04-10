@@ -1,0 +1,49 @@
+@svg border-square {
+  @rect {
+    fill: var(--fill-color, #000);
+    width: 100%;
+    height: 100%;
+    stroke: var(--border-color, #000);
+    stroke-width: var(--border-width, 1);
+  }
+}
+@svg border-t {
+  @line {
+    x1: 0%;
+    y1: 0%;
+    x2: 100%;
+    y2: 0%;
+    stroke: var(--border-color, #000);
+    stroke-width: var(--border-width, 1);
+  }
+}
+@svg border-b {
+  @line {
+    x1: 0%;
+    y1: 100%;
+    x2: 100%;
+    y2: 100%;
+    stroke: var(--border-color, #000);
+    stroke-width: var(--border-width, 1);
+  }
+}
+@svg border-l {
+  @line {
+    x1: 0%;
+    y1: 100%;
+    x2: 0%;
+    y2: 0%;
+    stroke: var(--border-color, #000);
+    stroke-width: var(--border-width, 1);
+  }
+}
+@svg border-r {
+  @line {
+    x1: 100%;
+    y1: 100%;
+    x2: 100%;
+    y2: 0%;
+    stroke: var(--border-color, #000);
+    stroke-width: var(--border-width, 1);
+  }
+}
